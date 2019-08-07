@@ -109,5 +109,18 @@ body{
 .joinbutton__content:hover{
   cursor: pointer;
 }
+.footer{
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.footer__text{
+  
+}
+.footer__img{
+  flex-shrink: shrink;
+  
+}
 
 
