@@ -12,6 +12,7 @@ html {
 body{
   margin:0;
   font-family: 'Open Sans', sans-serif;
+  color:rgb(15, 15, 63);
 }
 .header{
   width:100%;
@@ -95,7 +96,7 @@ body{
   border:none;
 }
 .section__container{
-  width: 96%;
+  width: 90%;
   border-bottom: 2px solid $darkblue;
   padding:3vh;
   text-align: center;
@@ -112,6 +113,8 @@ body{
   width:15vw;
   height:10vh;
   background-color: black;
+  border-radius: 40px;
+  border:none;
   font-size: 1.3em;
   position:absolute;
 }
@@ -124,12 +127,13 @@ body{
 }
 
 tr{
-  background-color: $lightblue;;
+  background-color: $lightblue;
 }
 .form{
   width:50vw;
   color:white;
-  background-color: black;
+  background-color: rgb(33, 41, 46);
+  border-radius:40px;
   margin: 5vh auto;
   padding:1vh;
   display:flex;
