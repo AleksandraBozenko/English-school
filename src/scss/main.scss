@@ -45,6 +45,10 @@ body{
 .header__nav--contact:hover{
   cursor: pointer;
 }
+.header__nav__button{
+  color:white;
+  text-decoration:none;
+}
 .header__nav--join{
   width:13vw;
   background-color: $darkblue;
@@ -66,11 +70,11 @@ body{
 .menu__content__item{
   width:13.6vw;
 }
-a{
+.menu__content__item__a{
   text-decoration: none;
   color:black;
 }
-a:hover{
+.menu__content__item__a:hover{
   cursor: pointer;
   color:$darkblue;
 }
@@ -88,11 +92,12 @@ a:hover{
 }
 .section__title{
   text-align: center;
-  border-bottom: 1px solid $darkwhite;
+  border:none;
 }
 .section__container{
   width: 96%;
- 
+  border-bottom: 2px solid $darkblue;
+  padding:3vh;
   text-align: center;
 }
 .joinbutton{
@@ -106,20 +111,26 @@ a:hover{
 .joinbutton__content{
   width:15vw;
   height:10vh;
-  border: 3px solid black;
-  background-color: $lightblue;
+  background-color: black;
   font-size: 1.3em;
   position:absolute;
+}
+.joinbutton__content__a{
+  text-decoration: none;
+  color: white;
 }
 .joinbutton__content:hover{
   cursor: pointer;
 }
+
+tr{
+  background-color: $lightblue;;
+}
 .form{
-  width:60vw;
-  height:150vh;
-  border: 1px solid black;
-  background-color: $darkwhite;
-  margin:auto;
+  width:50vw;
+  color:white;
+  background-color: black;
+  margin: 5vh auto;
   padding:1vh;
   display:flex;
   justify-content: space-between;
@@ -127,14 +138,25 @@ a:hover{
 }
 .send{
   width:8vw;
-  height : 20vh;
+  height : 8vh;
   margin:auto;
   padding:1vh;
-  border: 3px solid $lightblue;
-  background-color: $darkwhite;
+  border: 1px solid black;
+  font-weight:bold;
+  background-color: $lightblue;
+}
+.send:hover{
+  cursor:pointer;
 }
 p{
   margin-bottom:3vh;
+}
+select{
+  margin-top:1vh;
+}
+option{
+  background-color: white;
+  border-top:3px solid white;
 }
 .footer{
   display:flex;
