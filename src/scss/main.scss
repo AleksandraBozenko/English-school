@@ -25,7 +25,7 @@ body{
 }
 .header__logo{
   width:31vh;
-  height:19.9vh;
+  height:100%;
 }
 .header__nav--title{
   font-size:1.7em;
@@ -61,6 +61,16 @@ body{
 }
 .header__nav--join:hover{
   cursor: pointer;
+}
+.header__hamburgerbutton{
+  background:none;
+  border:none;
+  color: $darkblue;
+  font-size:5em;
+  right:20px;
+  top:5px;
+  position:absolute;
+  display: none;
 }
 .menu__content{
   display: grid;
@@ -116,7 +126,7 @@ body{
   margin: 10vh 0 10vh 0;
 }
 .joinbutton__content{
-  width:15vw;
+  width:16vw;
   height:10vh;
   background-color: $blue;
   border-radius: 40px;
@@ -131,10 +141,34 @@ body{
 .joinbutton__content:hover{
   cursor: pointer;
 }
+.table{
+   width:100%;
+  margin:20px auto;
+  overflow-x: auto
 
-tr{
-  background-color: $lightblue;
 }
+.rwd-table {
+ position: relative;
+}
+td{
+  padding:20px;
+		border:1px solid #e1e1e1;
+}
+table {
+	border:1px solid #e1e1e1;
+	border-collapse:collapse;
+}
+::-webkit-scrollbar {
+  -webkit-appearance: none;
+  width: 7px;
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  background-color: rgba(0,0,0,.5);
+  box-shadow: 0 0 1px rgba(255,255,255,.5);
+  position: sticky;
+}
+
 .form{
   width:50vw;
   color:white;
@@ -179,4 +213,45 @@ option{
   
 }
 
+@media (max-width: 1124px){
+  
+  .header__nav--join{
+    display:none;
+  }
+  .header__nav--contact{
+    display:none;
+  }
+  .menu{
+    display:none;
+  }
+  .joinbutton__content{
+    width: 30vh;
+  }
+  .send{
+    width: 14vw;
+  }
+}
 
+@media (max-width: 800px){
+  .header__nav--title{
+    display:none;
+  }
+  .header__hamburgerbutton{
+    display: block;
+  }
+.table {
+  overflow-x:auto;
+  padding-top:45px;
+}
+table {
+  width:100%;
+  table-layout: fixed;
+}
+
+  .form{
+    margin-left:0;
+  }
+  .table{
+    width:1200px;
+  }
+}
