@@ -17,8 +17,18 @@ if ('serviceWorker' in navigator) {
 // Niżej możesz pisać.
 
 
-console.log(`Hello world!`);
 
-	
+
+const button = document.querySelector('.header__hamburgerbutton--js')
+button.addEventListener('click', (e) => {
+const nav = document.querySelector('.nav')
+nav.classList.toggle('nav--js')
+if(nav.classList.contains('nav--js')){
+    button.innerHTML = 'x'
+}
+else{
+    button.innerHTML = '≡'
+}
+})
 
 

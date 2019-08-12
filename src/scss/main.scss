@@ -71,6 +71,10 @@ body{
   top:5px;
   position:absolute;
   display: none;
+  font-weight: bolder;
+}
+.header__hamburgerbutton:hover{
+  cursor:pointer;
 }
 .menu__content{
   display: grid;
@@ -89,6 +93,29 @@ body{
 .menu__content__item__a:hover{
   cursor: pointer;
   color:$darkblue;
+}
+.nav{
+    margin:0;
+    padding:0;
+    display:none;
+}
+.nav--js{
+    display:block;
+}
+.nav__items{
+    width:50%;
+    min-height:50px;
+    background: white;
+    border-bottom:1px solid $lightblue;
+    display:flex;
+    text-align:center;
+    justify-content: flex-start;
+    align-items:center;
+    margin-left: 10vw;
+}
+.nav__items:hover{
+  cursor: pointer;
+  color: $darkblue;
 }
 .slider{
   height:60vh;
@@ -117,6 +144,12 @@ body{
   font-weight: bold;
   color: $text;
 }
+.section__img{
+  display: block;
+  margin: 3vh auto;
+  width:39vw;
+  height: 20vh;
+}
 .joinbutton{
   width:100%;
   height:10vh;
@@ -134,7 +167,7 @@ body{
   font-size: 1.3em;
   position:absolute;
 }
-.joinbutton__content__a{
+.joinbutton__content__link{
   text-decoration: none;
   color: white;
 }
@@ -157,6 +190,20 @@ td{
 table {
 	border:1px solid #e1e1e1;
 	border-collapse:collapse;
+}
+.table__mobile{
+  text-align: center;
+  display: none;
+  padding: 20px;
+}
+.table__mobile--link{
+  text-decoration: none;
+  color: $text;
+  font-weight: bold;
+  font-size: 1.5em;
+}
+.table__mobile--link:hover{
+  cursor: pointer;
 }
 ::-webkit-scrollbar {
   -webkit-appearance: none;
@@ -208,9 +255,12 @@ option{
   justify-content: center;
   align-items: center;
 }
+.footer__text{
+  margin-right: 20px;
+}
 .footer__img{
   flex-shrink: shrink;
-  
+  margin-left:3px;
 }
 
 @media (max-width: 1124px){
@@ -224,6 +274,9 @@ option{
   .menu{
     display:none;
   }
+  .header__hamburgerbutton{
+    display: block;
+  }
   .joinbutton__content{
     width: 30vh;
   }
@@ -231,13 +284,23 @@ option{
     width: 14vw;
   }
 }
-
-@media (max-width: 800px){
+@media (max-width: 950px){
   .header__nav--title{
     display:none;
   }
-  .header__hamburgerbutton{
+  .section__img{
+    width: 52vw;
+  }
+  .table{
+    display: none;
+  }
+  .table__mobile{
     display: block;
+  }
+}
+@media (max-width: 800px){
+  .section__img{
+    width: 85vw;
   }
 .table {
   overflow-x:auto;
